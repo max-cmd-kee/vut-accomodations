@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Accommodation | Accommodations</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">VUT-Student Accommodation</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Accom.html" class="active">Accommodations</a></li>
+                    <li><a href="Booking.html">Booking/Contact</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="accommodations-header">
+            <div class="container">
+                <h1>Available Accommodations</h1>
+                <p>Browse all available student accommodation listings and find your perfect home away from home.</p>
+            </div>
+        </section>
+
+        <section id="accommodations">
+            <div class="container">
+                <div class="filter-section">
+                    <h2>Filter By Type</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="on-campus">On-Campus</button>
+                        <button class="filter-btn" data-filter="off-campus">Off-Campus</button>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <article class="card" data-type="on-campus">
+                        <div class="card-image">
+                            <img src="images/1.jpg" alt="Main Residence">
+                            <span class="badge">On-Campus</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Main Residence</h3>
+                            <div class="accommodation-details">
+                                <p><strong>Location:</strong> VUT Campus</p>
+                                <p><strong>Price:</strong> R1,000/month</p>
+                                <p><strong>Payment:</strong> NSFAS, Cash, EFT</p>
+                                <p>Modern facilities with shared rooms, study areas, and recreational spaces. Access to campus amenities 24/7.</p>
+                            </div>
+                            <div class="card-footer">
+                                <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card" data-type="on-campus">
+                        <div class="card-image">
+                            <img src="images/1.jpg" alt="Student Block A">
+                            <span class="badge">On-Campus</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Student Block A</h3>
+                            <div class="accommodation-details">
+                                <p><strong>Location:</strong> Campus North Wing</p>
+                                <p><strong>Price:</strong> R950/month</p>
+                                <p><strong>Payment:</strong> NSFAS, Monthly Installments</p>
+                                <p>Comfortable accommodation with excellent facilities and proximity to lecture halls.</p>
+                            </div>
+                            <div class="card-footer">
+                                <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card" data-type="off-campus">
+                        <div class="card-image">
+                            <img src="images/1.jpg" alt="Downtown Apartments">
+                            <span class="badge">Off-Campus</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Downtown Apartments</h3>
+                            <div class="accommodation-details">
+                                <p><strong>Location:</strong> Vanderbijlpark City Center</p>
+                                <p><strong>Price:</strong> R1,200/month</p>
+                                <p><strong>Payment:</strong> Cash, EFT, Bank Transfer</p>
+                                <p>Modern apartments with independent living, close to shopping and entertainment.</p>
+                            </div>
+                            <div class="card-footer">
+                                <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card" data-type="off-campus">
+                        <div class="card-image">
+                            <img src="images/1.jpg" alt="Student Flats">
+                            <span class="badge">Off-Campus</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Modern Student Flats</h3>
+                            <div class="accommodation-details">
+                                <p><strong>Location:</strong> Near Campus Gate 2</p>
+                                <p><strong>Price:</strong> R1,100/month</p>
+                                <p><strong>Payment:</strong> All Payment Methods</p>
+                                <p>Newly renovated flats with WiFi, security features, and laundry facilities.</p>
+                            </div>
+                            <div class="card-footer">
+                                <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Accom.html">Accommodations</a></li>
+                        <li><a href="Booking.html">Booking/Contact</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:accommodations@vut.ac.za">accommodations@vut.ac.za</a></p>
+                    <p>Phone: <a href="tel:+27633920801">+27 63 392 0801</a></p>
+                    <p>Address: Vanderbijlpark, Gauteng, South Africa</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/vutstudentaccommodation" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com/vutstudentaccom" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/vutstudentaccommodation" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://wa.me/27633920801" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VUT-Student Accommodation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <input type="checkbox" id="booking-modal-toggle" class="modal-toggle">
+    
+    <div class="modal-overlay">
+        <div class="modal">
+            <label for="booking-modal-toggle" class="modal-close">&times;</label>
+            <div class="modal-content">
+                <h2>Book Your Accommodation</h2>
+                <p>Fill in the form below to book your preferred accommodation.</p>
+                
+                <form class="booking-form" method="post" action="#">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingName">Full Name</label>
+                            <input type="text" id="bookingName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingEmail">Email Address</label>
+                            <input type="email" id="bookingEmail" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingPhone">Phone Number</label>
+                            <input type="tel" id="bookingPhone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingID">Student ID</label>
+                            <input type="text" id="bookingID" name="student_id" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookingAccommodation">Select Accommodation</label>
+                        <select id="bookingAccommodation" name="accommodation" required>
+                            <option value="">Choose an accommodation...</option>
+                            <option value="main-residence">Main Residence - R1,000/month</option>
+                            <option value="student-block-a">Student Block A - R950/month</option>
+                            <option value="downtown-apts">Downtown Apartments - R1,200/month</option>
+                            <option value="modern-flats">Modern Student Flats - R1,100/month</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingCheckIn">Check-In Date</label>
+                            <input type="date" id="bookingCheckIn" name="check_in" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingDuration">Duration (Months)</label>
+                            <input type="number" id="bookingDuration" name="duration" min="1" max="12" value="12" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookingPayment">Preferred Payment Method</label>
+                        <select id="bookingPayment" name="payment_method" required>
+                            <option value="">Choose payment method...</option>
+                            <option value="nsfas">NSFAS</option>
+                            <option value="cash">Cash Payment</option>
+                            <option value="eft">EFT Transfer</option>
+                            <option value="installment">Monthly Installment</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookingMessage">Additional Information</label>
+                        <textarea id="bookingMessage" name="message" rows="4" placeholder="Any special requests or questions..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                        <label for="booking-modal-toggle" class="btn btn-cancel">Cancel</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

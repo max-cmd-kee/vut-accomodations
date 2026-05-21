@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking & Contact | VUT-Student Accommodation</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">VUT-Student Accommodation</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Accom.html">Accommodations</a></li>
+                    <li><a href="Booking.html" class="active">Booking/Contact</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="booking-hero">
+            <div class="container">
+                <h1>Book Your Accommodation</h1>
+                <p class="lead">Secure your perfect student accommodation with our easy online booking system.</p>
+            </div>
+        </section>
+
+        <section id="booking-info">
+            <div class="container">
+                <div class="booking-intro">
+                    <h2>How to Book Your Accommodation</h2>
+                    <div class="steps-grid">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h3>Browse</h3>
+                            <p>Visit our <a href="Accom.html">Accommodations page</a> to explore available listings that match your preferences.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h3>Select</h3>
+                            <p>Choose your preferred accommodation and review all details including price, location, and amenities.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h3>Inquire</h3>
+                            <p>Use the contact form below to send your inquiry or booking request to our team.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <h3>Confirm</h3>
+                            <p>Our team will review your request and contact you to confirm your booking and finalize payment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking-form-section">
+            <div class="container">
+                <div class="booking-form-wrapper">
+                    <article class="booking-form-container">
+                        <h2>Booking Request Form</h2>
+                        <p>Fill in the details below to request your accommodation booking.</p>
+                        
+                        <form class="booking-form" method="post" action="#">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="bookingName">Full Name *</label>
+                                    <input type="text" id="bookingName" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bookingEmail">Email Address *</label>
+                                    <input type="email" id="bookingEmail" name="email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="bookingPhone">Phone Number *</label>
+                                    <input type="tel" id="bookingPhone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bookingID">Student ID *</label>
+                                    <input type="text" id="bookingID" name="student_id" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bookingAccommodation">Select Accommodation *</label>
+                                <select id="bookingAccommodation" name="accommodation" required>
+                                    <option value="">Choose an accommodation...</option>
+                                    <option value="main-residence">Main Residence - R1,000/month</option>
+                                    <option value="student-block-a">Student Block A - R950/month</option>
+                                    <option value="downtown-apts">Downtown Apartments - R1,200/month</option>
+                                    <option value="modern-flats">Modern Student Flats - R1,100/month</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="bookingCheckIn">Check-In Date *</label>
+                                    <input type="date" id="bookingCheckIn" name="check_in" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bookingDuration">Duration (Months) *</label>
+                                    <input type="number" id="bookingDuration" name="duration" min="1" max="12" value="12" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bookingPayment">Preferred Payment Method *</label>
+                                <select id="bookingPayment" name="payment_method" required>
+                                    <option value="">Choose payment method...</option>
+                                    <option value="nsfas">NSFAS</option>
+                                    <option value="cash">Cash Payment</option>
+                                    <option value="eft">EFT Transfer</option>
+                                    <option value="installment">Monthly Installment</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bookingMessage">Additional Information</label>
+                                <textarea id="bookingMessage" name="message" rows="4" placeholder="Any special requests or questions..."></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Submit Booking Request</button>
+                                <button type="reset" class="btn btn-secondary">Clear Form</button>
+                            </div>
+                        </form>
+                    </article>
+
+                    <aside class="booking-sidebar">
+                        <div class="sidebar-box">
+                            <h3>Quick Contact Info</h3>
+                            <p><strong>Email:</strong><br><a href="mailto:accommodations@vut.ac.za">accommodations@vut.ac.za</a></p>
+                            <p><strong>Phone:</strong><br><a href="tel:+27633920801">+27 63 392 0801</a></p>
+                            <p><strong>Address:</strong><br>Vanderbijlpark, Gauteng, South Africa</p>
+                        </div>
+                        <div class="sidebar-box">
+                            <h3>Response Time</h3>
+                            <p>We typically respond to all booking requests within <strong>24 hours</strong> during business days.</p>
+                        </div>
+                        <div class="sidebar-box">
+                            <h3>Payment Methods</h3>
+                            <ul>
+                                <li>NSFAS transfers</li>
+                                <li>Cash payment</li>
+                                <li>EFT transfers</li>
+                                <li>Monthly installments</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-section">
+            <div class="container">
+                <h2>General Inquiry Form</h2>
+                <p>Have questions about our accommodations? Use the form below to contact us directly.</p>
+                
+                <form class="contact-form" method="post" action="#">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <input type="text" id="contactSubject" name="subject" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="reset" class="btn btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-grid">
+                    <article class="faq-item">
+                        <h3>How long does the booking process take?</h3>
+                        <p>Our team reviews all booking requests within 24 hours and will contact you with confirmation or additional information requirements.</p>
+                    </article>
+                    
+                    <article class="faq-item">
+                        <h3>What payment methods do you accept?</h3>
+                        <p>We accept NSFAS transfers, cash payments, EFT transfers, and monthly installments. You can select your preferred method during the booking process.</p>
+                    </article>
+                    
+                    <article class="faq-item">
+                        <h3>Can I cancel my booking?</h3>
+                        <p>Cancellation policies depend on your specific lease agreement. Please contact us directly to discuss cancellation options for your accommodation.</p>
+                    </article>
+                    
+                    <article class="faq-item">
+                        <h3>Are deposits required?</h3>
+                        <p>Yes, a security deposit is typically required upon booking confirmation. The amount varies depending on the accommodation type.</p>
+                    </article>
+                    
+                    <article class="faq-item">
+                        <h3>Can families book accommodation?</h3>
+                        <p>Our platform is primarily for VUT students, but we encourage parents to contact us directly to discuss specific situations.</p>
+                    </article>
+                    
+                    <article class="faq-item">
+                        <h3>How do I verify my accommodation is legitimate?</h3>
+                        <p>All accommodations listed on our platform have been verified and checked by our Provider Verification Specialist. Always get a written lease agreement.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Accom.html">Accommodations</a></li>
+                        <li><a href="Booking.html">Booking/Contact</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:accommodations@vut.ac.za">accommodations@vut.ac.za</a></p>
+                    <p>Phone: <a href="tel:+27633920801">+27 63 392 0801</a></p>
+                    <p>Address: Vanderbijlpark, Gauteng, South Africa</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/vutstudentaccommodation" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com/vutstudentaccom" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/vutstudentaccommodation" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://wa.me/27633920801" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VUT-Student Accommodation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
