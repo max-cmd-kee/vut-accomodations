@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking & Contact | VUT-Student Accommodation</title>
+    <title>Booking & Contact | VarsityStay</title>
+    <link rel="icon" type="image/png" href="images/VS.png">
     <link rel="stylesheet" href="css/styling.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -11,7 +12,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="index.html">VUT-Student Accommodation</a>
+                <a href="index.html"><img src="images/VS.png" alt="VarsityStay Logo" class="logo-img">VarsityStay</a>
             </div>
             <nav>
                 <ul>
@@ -93,6 +94,17 @@
                             </div>
 
                             <div class="form-group">
+                                <label for="bookingInstitution">Select Institution *</label>
+                                <select id="bookingInstitution" name="institution" required>
+                                    <option value="">Choose an institution...</option>
+                                    <option value="vut">Vaal University of Technology (VUT)</option>
+                                    <option value="tut">Tshwane University of Technology (TUT)</option>
+                                    <option value="wits">Wits University</option>
+                                    <option value="up">University of Pretoria (UP)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
                                 <label for="bookingAccommodation">Select Accommodation *</label>
                                 <select id="bookingAccommodation" name="accommodation" required>
                                     <option value="">Choose an accommodation...</option>
@@ -140,7 +152,7 @@
                     <aside class="booking-sidebar">
                         <div class="sidebar-box">
                             <h3>Quick Contact Info</h3>
-                            <p><strong>Email:</strong><br><a href="mailto:accommodations@vut.ac.za">accommodations@vut.ac.za</a></p>
+                            <p><strong>Email:</strong><br><a href="mailto:support@varsitystay.co.za">support@varsitystay.co.za</a></p>
                             <p><strong>Phone:</strong><br><a href="tel:+27633920801">+27 63 392 0801</a></p>
                             <p><strong>Address:</strong><br>Vanderbijlpark, Gauteng, South Africa</p>
                         </div>
@@ -230,7 +242,7 @@
                     
                     <article class="faq-item">
                         <h3>Can families book accommodation?</h3>
-                        <p>Our platform is primarily for VUT students, but we encourage parents to contact us directly to discuss specific situations.</p>
+                        <p>Our platform is primarily for university students, but we encourage parents to contact us directly to discuss specific situations.</p>
                     </article>
                     
                     <article class="faq-item">
@@ -256,22 +268,22 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact Us</h4>
-                    <p>Email: <a href="mailto:accommodations@vut.ac.za">accommodations@vut.ac.za</a></p>
+                    <p>Email: <a href="mailto:support@varsitystay.co.za">support@varsitystay.co.za</a></p>
                     <p>Phone: <a href="tel:+27633920801">+27 63 392 0801</a></p>
                     <p>Address: Vanderbijlpark, Gauteng, South Africa</p>
                 </div>
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <ul class="social-links">
-                        <li><a href="https://www.facebook.com/vutstudentaccommodation" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.twitter.com/vutstudentaccom" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/vutstudentaccommodation" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/varsitystay" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com/varsitystay" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/varsitystay" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="https://wa.me/27633920801" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 VUT-Student Accommodation. All Rights Reserved.</p>
+                <p>&copy; 2026 VarsityStay. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

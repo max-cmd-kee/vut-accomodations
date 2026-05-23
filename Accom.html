@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Accommodation | Accommodations</title>
-    <link rel="stylesheet" href="css/styling.css">
+    <title>Accommodations | VarsityStay</title>
+    <link rel="icon" type="image/png" href="images/VS.png">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="index.html">VUT-Student Accommodation</a>
+                <a href="index.html"><img src="images/VS.png" alt="VarsityStay Logo" class="logo-img">VarsityStay</a>
             </div>
             <nav>
                 <ul>
@@ -34,140 +35,285 @@
 
         <section id="accommodations">
             <div class="container">
-                <div class="filter-section">
-                    <h2>Filter By Type</h2>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="on-campus">On-Campus</button>
-                        <button class="filter-btn" data-filter="off-campus">Off-Campus</button>
+                <input type="radio" id="institution-vut" name="institution" class="institution-radio" checked>
+                <input type="radio" id="institution-tut" name="institution" class="institution-radio">
+                <input type="radio" id="institution-wits" name="institution" class="institution-radio">
+                <input type="radio" id="institution-up" name="institution" class="institution-radio">
+
+                <div class="institutions-section">
+                    <h2>Select Institution</h2>
+                    <div class="institutions-grid">
+                        <label for="institution-vut" class="institution-btn">
+                            <i class="fas fa-building"></i>
+                            <span>Vaal University of Technology</span>
+                        </label>
+                        <label for="institution-tut" class="institution-btn">
+                            <i class="fas fa-building"></i>
+                            <span>Tshwane University of Technology</span>
+                        </label>
+                        <label for="institution-wits" class="institution-btn">
+                            <i class="fas fa-building"></i>
+                            <span>Wits University</span>
+                        </label>
+                        <label for="institution-up" class="institution-btn">
+                            <i class="fas fa-building"></i>
+                            <span>University of Pretoria</span>
+                        </label>
                     </div>
                 </div>
 
-                <div class="cards">
-                    <article class="card" data-type="on-campus">
-                        <div class="card-image">
-                            <img src="images/1.jpg" alt="Main Residence">
-                            <span class="badge">On-Campus</span>
-                        </div>
-                        <div class="card-content">
-                            <h3>Main Residence</h3>
-                            <div class="accommodation-details">
-                                <p><strong>Location:</strong> VUT Campus</p>
-                                <p><strong>Price:</strong> R1,000/month</p>
-                                <p><strong>Payment:</strong> NSFAS, Cash, EFT</p>
-                                <p>Modern facilities with shared rooms, study areas, and recreational spaces. Access to campus amenities 24/7.</p>
-                            </div>
-                            <div class="card-footer">
-                                <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
-                            </div>
-                        </div>
-                    </article>
+                <div class="accommodations-wrapper">
+                    <!-- VUT Accommodations -->
+                    <div class="institution-accommodations" data-institution="vut">
+                        <div class="accommodations-row">
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="Main Residence">
+                                    <span class="accom-badge">On-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>Main Residence</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> VUT Campus</p>
+                                        <p><strong>Address:</strong> Vanderbijlpark, Gauteng</p>
+                                        <p><strong>Price:</strong> R1,000/month</p>
+                                        <p><strong>Payment:</strong> NSFAS, Cash, EFT</p>
+                                        <p class="description">Modern facilities with shared rooms, study areas, and recreational spaces. Access to campus amenities 24/7.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
 
-                    <article class="card" data-type="on-campus">
-                        <div class="card-image">
-                            <img src="images/1.jpg" alt="Student Block A">
-                            <span class="badge">On-Campus</span>
-                        </div>
-                        <div class="card-content">
-                            <h3>Student Block A</h3>
-                            <div class="accommodation-details">
-                                <p><strong>Location:</strong> Campus North Wing</p>
-                                <p><strong>Price:</strong> R950/month</p>
-                                <p><strong>Payment:</strong> NSFAS, Monthly Installments</p>
-                                <p>Comfortable accommodation with excellent facilities and proximity to lecture halls.</p>
-                            </div>
-                            <div class="card-footer">
-                                <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
-                            </div>
-                        </div>
-                    </article>
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="Student Block A">
+                                    <span class="accom-badge">On-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>Student Block A</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> Campus North Wing</p>
+                                        <p><strong>Address:</strong> VUT Campus, Building A</p>
+                                        <p><strong>Price:</strong> R950/month</p>
+                                        <p><strong>Payment:</strong> NSFAS, Monthly Installments</p>
+                                        <p class="description">Comfortable accommodation with excellent facilities and proximity to lecture halls.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
 
-                    <article class="card" data-type="off-campus">
-                        <div class="card-image">
-                            <img src="images/1.jpg" alt="Downtown Apartments">
-                            <span class="badge">Off-Campus</span>
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="Student Block B">
+                                    <span class="accom-badge">On-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>Student Block B</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> Campus South Wing</p>
+                                        <p><strong>Address:</strong> VUT Campus, Building B</p>
+                                        <p><strong>Price:</strong> R950/month</p>
+                                        <p><strong>Payment:</strong> NSFAS, EFT</p>
+                                        <p class="description">Recently renovated with modern amenities, WiFi, and security features throughout.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
                         </div>
-                        <div class="card-content">
-                            <h3>Downtown Apartments</h3>
-                            <div class="accommodation-details">
-                                <p><strong>Location:</strong> Vanderbijlpark City Center</p>
-                                <p><strong>Price:</strong> R1,200/month</p>
-                                <p><strong>Payment:</strong> Cash, EFT, Bank Transfer</p>
-                                <p>Modern apartments with independent living, close to shopping and entertainment.</p>
-                            </div>
-                            <div class="card-footer">
-                                <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
-                            </div>
-                        </div>
-                    </article>
+                    </div>
 
-                    <article class="card" data-type="off-campus">
-                        <div class="card-image">
-                            <img src="images/1.jpg" alt="Student Flats">
-                            <span class="badge">Off-Campus</span>
-                        </div>
-                        <div class="card-content">
-                            <h3>Modern Student Flats</h3>
-                            <div class="accommodation-details">
-                                <p><strong>Location:</strong> Near Campus Gate 2</p>
-                                <p><strong>Price:</strong> R1,100/month</p>
-                                <p><strong>Payment:</strong> All Payment Methods</p>
-                                <p>Newly renovated flats with WiFi, security features, and laundry facilities.</p>
-                            </div>
-                            <div class="card-footer">
-                                <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
-                            </div>
-                        </div>
-                    </article>
+                    <!-- TUT Accommodations -->
+                    <div class="institution-accommodations" data-institution="tut">
+                        <div class="accommodations-row">
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="Downtown Apartments">
+                                    <span class="accom-badge">Off-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>Downtown Apartments</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> Vanderbijlpark City Center</p>
+                                        <p><strong>Address:</strong> 123 Main Street, Vanderbijlpark</p>
+                                        <p><strong>Price:</strong> R1,200/month</p>
+                                        <p><strong>Payment:</strong> Cash, EFT, Bank Transfer</p>
+                                        <p class="description">Modern apartments with independent living, close to shopping and entertainment.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
 
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="Student Flats">
+                                    <span class="accom-badge">Off-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>Modern Student Flats</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> Near Campus Gate 2</p>
+                                        <p><strong>Address:</strong> 456 University Avenue, Pretoria</p>
+                                        <p><strong>Price:</strong> R1,100/month</p>
+                                        <p><strong>Payment:</strong> All Payment Methods</p>
+                                        <p class="description">Newly renovated flats with WiFi, security features, and laundry facilities.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
+
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="Premium Residence">
+                                    <span class="accom-badge">Off-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>Premium Residence</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> TUT Vicinity</p>
+                                        <p><strong>Address:</strong> 789 College Road, Pretoria</p>
+                                        <p><strong>Price:</strong> R1,350/month</p>
+                                        <p><strong>Payment:</strong> EFT, Bank Transfer, Installments</p>
+                                        <p class="description">Luxury student accommodation with gym, pool, and dedicated study areas.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Wits Accommodations -->
+                    <div class="institution-accommodations" data-institution="wits">
+                        <div class="accommodations-row">
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="Wits on Campus">
+                                    <span class="accom-badge">On-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>Wits on Campus</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> Wits East Campus</p>
+                                        <p><strong>Address:</strong> Johannesburg, Gauteng</p>
+                                        <p><strong>Price:</strong> R1,150/month</p>
+                                        <p><strong>Payment:</strong> NSFAS, EFT</p>
+                                        <p class="description">University managed residences with comprehensive facilities and 24/7 security.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
+
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="Braamfontein Hub">
+                                    <span class="accom-badge">Off-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>Braamfontein Hub</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> Braamfontein</p>
+                                        <p><strong>Address:</strong> 321 Smit Street, Johannesburg</p>
+                                        <p><strong>Price:</strong> R1,300/month</p>
+                                        <p><strong>Payment:</strong> All Payment Methods</p>
+                                        <p class="description">Modern student hub with co-working spaces, communal areas, and entertainment.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
+
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="Hillbrow Residence">
+                                    <span class="accom-badge">Off-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>Hillbrow Residence</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> Hillbrow</p>
+                                        <p><strong>Address:</strong> 654 De Korte Street, Johannesburg</p>
+                                        <p><strong>Price:</strong> R1,100/month</p>
+                                        <p><strong>Payment:</strong> Cash, EFT, Installments</p>
+                                        <p class="description">Affordable shared accommodation with kitchen facilities and community events.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- UP Accommodations -->
+                    <div class="institution-accommodations" data-institution="up">
+                        <div class="accommodations-row">
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="UP Village">
+                                    <span class="accom-badge">On-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>UP Village</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> UP Main Campus</p>
+                                        <p><strong>Address:</strong> Pretoria, Gauteng</p>
+                                        <p><strong>Price:</strong> R1,050/month</p>
+                                        <p><strong>Payment:</strong> NSFAS, Monthly Installments</p>
+                                        <p class="description">Spacious on-campus residences with excellent academic support facilities.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
+
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="Hatfield Apartments">
+                                    <span class="accom-badge">Off-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>Hatfield Apartments</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> Hatfield</p>
+                                        <p><strong>Address:</strong> 987 Duncan Street, Pretoria</p>
+                                        <p><strong>Price:</strong> R1,250/month</p>
+                                        <p><strong>Payment:</strong> All Payment Methods</p>
+                                        <p class="description">Contemporary apartments close to UP with shopping malls and entertainment nearby.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
+
+                            <article class="accommodation-card">
+                                <div class="accom-image">
+                                    <img src="images/1.jpg" alt="Lynnwood Residence">
+                                    <span class="accom-badge">Off-Campus</span>
+                                </div>
+                                <div class="accom-content">
+                                    <h3>Lynnwood Residence</h3>
+                                    <div class="accom-details">
+                                        <p><strong>Location:</strong> Lynnwood</p>
+                                        <p><strong>Address:</strong> 246 Garsfontein Road, Pretoria</p>
+                                        <p><strong>Price:</strong> R1,200/month</p>
+                                        <p><strong>Payment:</strong> EFT, Bank Transfer</p>
+                                        <p class="description">Secure gated community with 24/7 security and maintenance staff on-site.</p>
+                                    </div>
+                                    <label for="booking-modal-toggle" class="btn btn-small">Book Now</label>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Accom.html">Accommodations</a></li>
-                        <li><a href="Booking.html">Booking/Contact</a></li>
-                        <li><a href="About.html">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Us</h4>
-                    <p>Email: <a href="mailto:accommodations@vut.ac.za">accommodations@vut.ac.za</a></p>
-                    <p>Phone: <a href="tel:+27633920801">+27 63 392 0801</a></p>
-                    <p>Address: Vanderbijlpark, Gauteng, South Africa</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <ul class="social-links">
-                        <li><a href="https://www.facebook.com/vutstudentaccommodation" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.twitter.com/vutstudentaccom" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/vutstudentaccommodation" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://wa.me/27633920801" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 VUT-Student Accommodation. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+
 
     <input type="checkbox" id="booking-modal-toggle" class="modal-toggle">
-    
+
     <div class="modal-overlay">
         <div class="modal">
             <label for="booking-modal-toggle" class="modal-close">&times;</label>
             <div class="modal-content">
                 <h2>Book Your Accommodation</h2>
                 <p>Fill in the form below to book your preferred accommodation.</p>
-                
+
                 <form class="booking-form" method="post" action="#">
                     <div class="form-row">
                         <div class="form-group">
@@ -189,6 +335,17 @@
                             <label for="bookingID">Student ID</label>
                             <input type="text" id="bookingID" name="student_id" required>
                         </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookingInstitution">Select Institution *</label>
+                        <select id="bookingInstitution" name="institution" required>
+                            <option value="">Choose an institution...</option>
+                            <option value="vut">Vaal University of Technology (VUT)</option>
+                            <option value="tut">Tshwane University of Technology (TUT)</option>
+                            <option value="wits">Wits University</option>
+                            <option value="up">University of Pretoria (UP)</option>
+                        </select>
                     </div>
 
                     <div class="form-group">
@@ -237,5 +394,38 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Accom.html">Accommodations</a></li>
+                        <li><a href="Booking.html">Booking/Contact</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:support@varsitystay.co.za">support@varsitystay.co.za</a></p>
+                    <p>Phone: <a href="tel:+27633920801">+27 63 392 0801</a></p>
+                    <p>Address: Vanderbijlpark, Gauteng, South Africa</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/varsitystay" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com/varsitystay" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/varsitystay" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://wa.me/27633920801" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VarsityStay. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
