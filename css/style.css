@@ -26,14 +26,12 @@ ul {
 
 .container {
     max-width: 1200px;
-    min-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 section {
     padding: 80px 20px;
-    width: 100%;
 }
 
 h1, h2 {
@@ -251,7 +249,6 @@ nav ul li a.active {
     padding: 35px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 51, 102, 0.08);
-    border-left: 4px solid #003366;
     transition: all 0.3s ease;
 }
 
@@ -327,6 +324,7 @@ nav ul li a.active {
     box-shadow: 0 8px 20px rgba(0, 51, 102, 0.3);
 }
 
+
 .btn:active {
     transform: translateY(0);
 }
@@ -383,7 +381,6 @@ footer p {
     padding: 40px;
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     border-radius: 10px;
-    border-left: 5px solid #003366;
     box-shadow: 0 4px 15px rgba(0, 51, 102, 0.08);
     transition: all 0.3s ease;
 }
@@ -1004,7 +1001,6 @@ footer p {
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     padding: 40px;
     border-radius: 10px;
-    border-left: 5px solid #003366;
     margin-bottom: 40px;
 }
 
@@ -1169,7 +1165,6 @@ footer p {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 51, 102, 0.1);
-    border-top: 4px solid #003366;
 }
 
 .sidebar-box h3 {
@@ -1307,7 +1302,6 @@ footer p {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    border-left: 5px solid #003366;
     box-shadow: 0 4px 15px rgba(0, 51, 102, 0.08);
     transition: all 0.3s ease;
 }
@@ -1406,5 +1400,263 @@ footer p {
 .footer-bottom p {
     color: #cce0ff;
     font-size: 14px;
+}
+
+.badge-nsfas {
+    display: inline-block;
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.badge-selfpay {
+    display: inline-block;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 40px 15px;
+    }
+
+    h1, h2 {
+        font-size: 28px !important;
+    }
+
+    .header-container {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .logo a {
+        font-size: 18px;
+    }
+
+    .logo-img {
+        height: 32px;
+    }
+
+    nav ul {
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    #hero {
+        padding: 80px 15px;
+    }
+
+    #hero h1 {
+        font-size: 32px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    .services-grid,
+    .features-grid,
+    .team-grid,
+    .institutions-grid,
+    .values-list,
+    .faq-grid,
+    .safety-tips-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .accommodation-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .accommodations-row {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: visible;
+        gap: 20px;
+    }
+
+    .modal {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .modal-content {
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-sidebar {
+        order: -1;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+
+    .accom-image {
+        height: 180px;
+    }
+
+    .accom-content {
+        padding: 15px;
+    }
+
+    .accom-content h3 {
+        font-size: 18px;
+    }
+
+    .accom-details p {
+        font-size: 13px;
+    }
+
+    .institution-btn {
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    .institution-btn i {
+        font-size: 24px;
+    }
+
+    #accommodations-header h1,
+    #booking-hero h1 {
+        font-size: 32px;
+    }
+
+    #accommodations-header p,
+    #booking-hero .lead {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 30px 12px;
+    }
+
+    h1, h2 {
+        font-size: 22px !important;
+    }
+
+    .logo a {
+        font-size: 16px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    #hero {
+        padding: 60px 12px;
+    }
+
+    #hero h1 {
+        font-size: 24px;
+    }
+
+    #hero p {
+        font-size: 14px;
+    }
+
+    .modal-close {
+        width: 30px;
+        height: 30px;
+        font-size: 24px;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .booking-form label {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .btn-small {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .feature,
+    .value-item,
+    .safety-card,
+    .step-card {
+        padding: 20px;
+    }
+
+    .sidebar-box {
+        padding: 15px;
+    }
+
+    .accom-badge {
+        padding: 4px 10px;
+        font-size: 10px;
+    }
 }
 
