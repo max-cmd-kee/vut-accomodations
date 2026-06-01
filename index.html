@@ -7,6 +7,65 @@
     <link rel="icon" type="image/png" href="images/VS.png">
     <link rel="stylesheet" href="css/style.css?v=1.1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        #hero {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('images/VUT.jpeg') center/cover;
+            background-attachment: fixed;
+            animation: zoomBackground 15s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        @keyframes zoomBackground {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.35);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2 !important;
+        }
+
+        #hero h1 {
+            color: #ffffff !important;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        #hero p {
+            color: #f0f0f0 !important;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        #hero .btn {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
 </head>
 <body>
     <header>
